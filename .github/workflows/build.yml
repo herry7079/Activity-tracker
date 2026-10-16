@@ -1,6 +1,6 @@
-name: Build Daily Activity Tracker APK
+name: Build Daily Activity Tracker Test APK
 
-on:
+on:o
   workflow_dispatch:
 
 jobs:
