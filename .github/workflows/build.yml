@@ -1,0 +1,26 @@
+name: Build Daily Activity Tracker APK
+
+on:
+workflow_dispatch:
+
+jobs:
+build:
+runs-on: ubuntu-latest
+
+steps:
+  - name: Download project
+    uses: actions/checkout@v4
+
+  - name: Set up Java
+    uses: actions/setup-java@v4
+    with:
+      distribution: temurin
+      java-version: '17'
+
+  - name: Set up Android SDK
+    uses: android-actions/setup-android@v3
+
+  - name: Build APK
+    run: |
+      echo "Build workflow created successfully."
+      echo "Android project files will be added in the next step."
